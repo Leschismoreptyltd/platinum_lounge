@@ -1,0 +1,177 @@
+*, ::before, ::after{
+box-sizing: border-box;
+}
+@font-face {
+  font-family: 'MomsTypewriter';
+  src: url('/graphics/Fonts/Mom«t___.ttf') format('truetype')
+}
+:root{
+    --border-logo:#BFB48F;
+    --heading-color1:#F2EFE9;
+    --heading-color2:#5BC3EB;
+    --background:#251704;
+    --testborder: 2px solid white;
+}
+body{
+    background:var(--background)
+}
+.header{
+    display:flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: auto
+}
+.header #logo{
+    margin-top:40px;
+    /*border:3px solid var(--border-logo);
+    border-radius:20px;*/
+    opacity: 1;
+    scale: 1;
+    filter: invert(1)
+}
+.blur-overlay{
+   position:absolute;
+   width:99%;
+   height:55%;
+   background: url(/graphics/vecteezy_interior-of-a-night-club-bar-with-tables-and-chairs-3d_30530028.jpg) center/cover no-repeat;
+   z-index: -1;
+   filter: blur(3px);
+}
+
+.home{
+    grid-template-columns: 1fr 25rem 1fr;
+}
+
+/*Menu Bar*/
+.menu-bar a i {
+    margin-right: 5px;
+  }
+
+.menu-bar {
+    position: fixed;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    background-color:var(--background); /* Adjust the background color of your menu bar */
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+    z-index: 1000; /* Set a high z-index to ensure the bar is above other elements */
+    /*border: 0.5px solid var(--border-logo);*/
+    opacity: 0.7;
+    display: grid;
+  }
+  
+  .menu-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .menu-bar li {
+    margin-right: 20px;
+  }
+  
+  .menu-bar a {
+    text-decoration: none;
+    color: var(--heading-color1); /* Adjust the text color of your menu items */
+    font-weight: bold;
+  }
+  
+  .menu-bar a:hover {
+    color: var(--heading-color2); /* Adjust the text color on hover */
+    opacity: 0.25;
+  }
+  .menu-bar li:last-of-type{
+    margin-left: auto;
+    text-decoration: none;
+    color: var(--heading-color1); /* Adjust the text color of your menu items */
+    font-weight: bold;
+  }
+
+/*About Us Section*/
+
+.about-us-slideshow{
+    margin-top:90px;
+    width: 100%;
+    height:1500px;
+    border: var(--testborder)
+}
+.heading-h1{
+  position:absolute;
+  font-family: "MomsTypewriter", sans-serif;
+  left:20%;
+  top:70%;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--heading-color1);
+  font-size: 7.5rem ;
+  z-index:1000;    
+    
+}
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%; /* Adjust the maximum width of the carousel */
+  height:42%;
+  margin: auto;
+  overflow: hidden;
+   
+}
+
+.carousel-slide {
+  display: none;
+  animation: fade 7s ease-in-out;
+}
+
+@keyframes fade {
+  0%, 100% {
+    opacity: 0.3;
+     }
+
+ 
+  20%, 80% {
+    opacity: 1;
+     }
+}
+
+.carousel-slide  img {
+  width: 100%;
+  height: auto;
+}
+
+.paragraph{
+  width:100%;
+  color: var(--heading-color1);
+  border: var(--testborder);
+}
+.paragraph h1{
+  left: 50%;
+  font-family: "MomsTypewriter";
+  font-size: 2.5rem;
+  text-decoration: underline;
+}
+.paragraph p{
+  left:25%;
+  margin:25px;
+  width:60%;
+  text-align:justify;
+  font-size: 1.15em;
+  word-spacing: 3px;
+  letter-spacing: 0.6px;
+}
+/*.carousel-container{
+  display:flex;   
+  margin:5px;
+  padding: 10px; 
+  border:solid 2px white;
+}
+
+.carousel-card{
+  margin:2px;
+  padding:5px;
+  border:solid 2px white;
+}
+.carousel-description p{
+  color: var(--heading-color1)
+}*/
