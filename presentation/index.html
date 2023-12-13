@@ -10,105 +10,212 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <section class="header">
-        <div class="blur-overlay"></div>
-        <!--<img id="poster" src="/graphics/280615249_131760786130373_8274600233333011146_n.jpg" alt="Chairs and tables outside platinum">-->
-        <img id="logo" src="/graphics/platinum_logo_2-removebg-preview.png" alt="platinum logo">
-        <div class="menu-bar" id="sticky-menu">
-            <ul>
-                <li><a href="#home"><i class="fa fa-home"></i> Home</a></li>
-                <li><a href="#food-menu"><i class="fa-solid fa-utensils"></i> Food Menu</a></li>
-                <li><a href="#bookings"><i class="fa fa-calendar-alt"></i> Bookings</a></li>
-                <li><a href="#gallery"><i class="fa fa-image"></i> Gallery</a></li>
-                <li><a href="#contact"><i class="fa fa-envelope"></i> Contact Us</a></li>
-                <li><a href="#sign-in">Sign In</a></li>
-                <li><span><i class="fas fa-phone"></i> &nbsp; 078 552 5252</span></li>
-                
-            </ul>
+    <section class="header-section">
+        <div class="header" id="home">
+            <div class="blur-overlay"></div>
+            <div class="logo"> 
+                <img src="/graphics/platinum_logo.png" alt="">
+            </div>
             
-          </div>
+            <div class="menubar">
+                <input type="checkbox" id="menu">
+                <label for="menu">
+                  <div>
+                    <span class="menu-line"></span>
+                    <span class="menu-line"></span>
+                    <span class="menu-line"></span>
+                    <span class="menu-line"></span>
+                    <span class="menu-line"></span>
+                    <span class="menu-line"></span>
+                  </div>     
+                </label>
+            
+                
+                <div class="menu">
+                  <ul>
+                    <li><a href="#home"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="test.html"><i class="fa-solid fa-utensils"></i> Food Menu</a></li>
+                    <li><a href="test.html"><i class="fa fa-calendar-alt"></i> Bookings</a></li>
+                    <li><a href="test.html"><i class="fa fa-image"></i> Gallery</a></li>
+                    <li><a href="#contact"><i class="fa fa-envelope"></i> Contact Us</a></li>
+                    <li><a href="test.html">Sign In</a></li>
+                    
+                </ul>
+                </div>
+              </div>
+        </div>
     </section>
     <section class="home">
         <div class="about-us-slideshow">
-            <h1 class="heading-h1" id="heading1">About Us</h1>
-            <!--<div class="carousel-container">
-                <div class="carousel-card">
-                    <div class="carousel-img">
-                        <img src="/graphics/Posters/332324296_163053266521983_774275660601331244_n.jpg" alt="poster1">
+
+            <div class="carousel-container" >
+                <div id="slider">
+                    <div class="slides">
+            
+                      <div class="slider">
+                        <div class="legend"></div>
+                        <div class="content">
+                          <div class="content-txt">
+                            <h1>Welcome to Platinum Lounge</h1>
+                            <p>Welcome to Platinum Lounge—where vibrant vibes meet delectable delights. 
+                                At Platinum Lounge, every moment is a celebration of warmth, taste, and entertainment. Join us for an unforgettable experience.
+                            </p>
+                            
+                          </div>
+                        </div>
+                        <div class="image">
+                           <img src="/graphics/vecteezy_a-bar-with-several-glasses-of-drinks-and-fruit-ai-generated_30050753.jpg" alt="Image 1">
+                        </div>
+                      </div>
+            
+                      <div class="slider">
+                        <div class="legend"></div>
+                        <div class="content">
+                          <div class="content-txt">
+                            <h1>Drinks, Drinks and more Drinks...</h1>
+                            <p>With a fully stocked bar featuring an array of beers and spirits, 
+                                Platinum Lounge caters to every palate.
+
+                            </p>
+                          </div>
+                        </div>
+                        <div class="image">
+                           <img src="/graphics/imagecompressor/vecteezy_ai-generated-a-frothy-pint-of-dark-stout-poured-at-the-bar_35098511-min.jpg" alt="Image 2">
+                         </div>
+                      </div>
+            
+                      <div class="slider">
+                        <div class="legend"></div>
+                        <div class="content">
+                          <div class="content-txt">
+                            <h1>Come Hungry</h1>
+                            <p>Our hearty lounge is your go-to for live DJ entertainment, 
+                                wood-fired pizzas, and shareable baskets bursting with flavor.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="image">
+                           <img src="/graphics/imagecompressor/vecteezy_assortment-of-alcoholic-drinks-illustration-ai-generative_23702000-min.jpg" alt="Image 3">
+                         </div>
+                      </div>
+            
+                      <div class="slider">
+                        <div class="legend"></div>
+                        <div class="content">
+                          <div class="content-txt">
+                            <h1>Sonskyn of Reen, Kom Kuier</h1>
+                            <p>Experience the best of Paarl's weather in our shaded outdoor area or embrace cozy nights by our fireplaces.
+
+                            </p>
+                          </div>
+                        </div>
+                        <div class="image">
+                           <img src="/graphics/vecteezy_cocktail-on-a-bench-ai-generated_32592704.jpg"> 
+                          </div>
+                      </div>
+                      
                     </div>
-                    <div class="carousel-description">
-                        <p>Event Description and Date</p>
-                        <button>Book Now!!!</button>
+                    <div class="switch">
+                      <ul>
+                        <li>
+                          <div class="on"></div>
+                        </li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                      </ul>
                     </div>
-                </div>
-                <div class="carousel-card">
-                    <div class="carousel-img">
-                        <img src="/graphics/Posters/405759678_334862469163971_7897539922220405841_n.jpg" alt="poster1">
-                    </div>
-                    <div class="carousel-description">
-                        <p>Event Description and Date</p>
-                        <button>Book Now!!!</button>
-                    </div>
-                </div>
-                <div class="carousel-card">
-                    <div class="carousel-img">
-                        <img src="/graphics/Posters/406075231_336355202348031_568718412970775803_n.jpg" alt="poster1">
-                    </div>
-                    <div class="carousel-description">
-                        <p>Event Description and Date</p>
-                        <button>Book Now!!!</button>
-                    </div>
-                </div>
-                <div class="carousel-card">
-                    <div class="carousel-img">
-                        <img src="/graphics/Posters/407400506_337966772186874_579467581805473658_n.jpg" alt="poster1">
-                    </div>
-                    <div class="carousel-description">
-                        <p>Event Description and Date</p>
-                        <button>Book Now!!!</button>
-                    </div>
-                </div>
-                
-            </div>-->
-            <div class="carousel-container">
-                <div class="carousel-slide" id="slide1">
-                  <img src="/graphics/vecteezy_a-bar-with-several-glasses-of-drinks-and-fruit-ai-generated_30050753.jpg" alt="Image 1">
-                </div>
-                <div class="carousel-slide" id="slide2">
-                  <img src="/graphics/vecteezy_ai-generated-a-frothy-pint-of-dark-stout-poured-at-the-bar_35098511.jpg" alt="Image 2">
-                </div>
-                <div class="carousel-slide" id="slide3">
-                  <img src="/graphics/vecteezy_assortment-of-alcoholic-drinks-illustration-ai-generative_23702000.jpg" alt="Image 3">
-                </div>
+                  </div>
+            </div>
                 <!-- Add more slides as needed -->
             
-                <!--<button class="prev" onclick="changeSlide(-1)">&#10094;</button>
-                <button class="next" onclick="changeSlide(1)">&#10095;</button>-->
-                
         </div>
-        <div class="paragraph">
-            <h1>Welcome To Platinum Lounge</h1>
-            <p>Welcome to Platinum Lounge, where heartiness meets entertainment in perfect harmony. 
-                Our lounge is a vibrant space that not only caters to your culinary desires but also offers a pulsating atmosphere with live entertainment from talented DJs. 
-                Whether you're looking for a night out with friends or a place to unwind after a long day, Platinum Lounge is the destination for you.
-            </p>
-            <p>Indulge your taste buds with our signature wood-fired pizzas, crafted with love and precision.
-                Our menu extends beyond the ordinary, featuring delicious baskets that are perfect for sharing and savoring. 
-                At Platinum Lounge, we take pride in delivering a gastronomic experience that goes beyond expectations.
-            </p>
-            <p>Step up to our fully stocked bar, where we take the art of mixology seriously. 
-                With a variety of beers on tap and in bottles, along with an extensive selection of spirits, our bar caters to every palate.
-                Whether you're a beer enthusiast or a cocktail connoisseur, you'll find something to delight your senses.
-            </p>
-            <p>Experience the best of both worlds at Platinum Lounge – enjoy the sunshine in our outside shaded area during the hot summer days in Paarl, or bask in the warmth of our fireplaces that create a cozy atmosphere during chilly nights. 
-                Our commitment is to provide not just a place to dine and unwind, but an escape that resonates with warmth, flavor, and entertainment. 
-                Come join us and make every moment at Platinum Lounge a memorable one.
-            </p>
+
+        <div class="container">
+
+          <div class="food-menu">
+            <a href="test.html">
+            <div class="food-menu-border">
+              <h1>Food Menu</h1>
+              <img src="/graphics/imagecompressor/vecteezy_freshly-baked-rustic-pizza-with-mozzarella-tomato-and_26437601-min.jpg" alt="">
+              <p>Indulge in a symphony of flavors with our artisanal wood-fired pizzas or share delightful moments over our scrumptious baskets, crafted to elevate your dining experience.</p>
+            </div>
+            </a>
+          </div>
+
+          <div class="bookings">
+            <a href="test.html">
+            <div class="bookings-border">
+              <h1>Bookings</h1>
+              <img src="/graphics/imagecompressor/vecteezy_booked-table-in-restaurant-with-sign-reserved-against_11563443-min.JPG" alt="">
+              <p>Secure your seat in our vibrant lounge—book now to ensure a delightful experience and avoid the disappointment of missing out on an unforgettable evening.</p>
+            </div>
+            </a>
+          </div>
+
+          <div class="gallery">
+            <a href="test.html">
+            <div class="gallery-border">
+              <h1>Gallery</h1>
+              <img src="/graphics/imagecompressor/vecteezy_vintage-blank-photo-frame-on-wood-background-with-space_19892172-min.jpg" alt="">
+              <p>Explore our gallery and witness the art of making memories. From laughter-filled gatherings to exquisite dishes, each snapshot is a testament to the joy we share in our welcoming space.</p>
+            </div>
+            </a>
+          </div>
+
         </div>
+
+        <div class="contact-us" id="contact">
+            <div class="details">
+                <div class="physical-address" id="physicalAddress">
+                    <h1>Come and Stop By</h1>
+                    <h2>Physical Address:</h2>
+                    <h3>Platinum Lounge</h3>
+                    <p>371 Main Road, Lemoenkloof</p>
+                    <p>Paarl</p>
+                    <p>7646</p>
+                </div>
+                <div class="physical-address" id="telEmail">
+                    <h2>Contact Details:</h2>
+                    <p>Tel: 072 777 1724</p>
+                    <p>Email: platinumseven@outlook.com</p>
+                </div>
+            </div>
+            
+            <div class="map">
+                <iframe id="gmap_canvas" 
+                    src="https://maps.google.com/maps?q=platinum lounge paarl&t=&z=16&ie=UTF8&iwloc=&output=embed" style="border: 2px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>>
+                </iframe>
+            </div>
+           
+            <div class="contact-us-form">
+                <p><strong>Your feedback fuels our passion!</strong> <br>Whether it's a rave review, a constructive critique, 
+                    or a glowing compliment, we want to hear it all. <br>At Platinum Lounge, 
+                    we thrive on excellence and your thoughts matter. <br>Reach out to us with your comments – because your experience is at the heart of everything we do. 
+                    <br>Cheers to making every moment memorable! 🌟</p>
+                <form id="contactUsForm" action="/send_message" method="post" >                   
+                    <label for="userName">Name:</label>
+                    <input type="text" name="userName" id="userName" placeholder="Required" required>
+                    <label for="userSurname">Surname:</label>
+                    <input type="text" name="userSurname" id="userSurname" placeholder="Required" required>
+                    <label for="userContactNumber">Contact Number:</label>
+                    <input type="tel" name="userContactNumber" id="userContactNumber" placeholder="Required" required >
+                    <label for="userEmail">Email:</label>
+                    <input type="email" name="userEmail" id="userEmail" placeholder="Required" required>
+                    <label for="userSubject">Subject</label>
+                    <input type="text" name="userSubject" id="userSubject" placeholder="Required" required>
+                    <label for="userMessage">Message:</label>
+                    <textarea name="userMessage" id="userMessage" cols="30" rows="10"></textarea>
+                    
+                </form>
+                <button id="userFormButton" type="submit">Send Message</button>
+    
+            </div>
         </div>
     </section>
     <footer>
         <a href="https://www.vecteezy.com/free-photos">Free Stock photos by Vecteezy</a>
+        <p>created by Leschismore</p>
     </footer>
 </body>
 </html>
